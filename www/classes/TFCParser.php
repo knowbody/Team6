@@ -33,7 +33,8 @@ class TFCParser {
 	}
 	private function parseKitchen(){
 		$this->data['kitchen'] = array();
-		foreach($this->csv['kitchen'] as $rowIndex => $row){
+		$rows = $this->csv['kitchen'];
+		foreach($rows as $rowIndex => $row){
 			if($rowIndex == 0 || empty($row[1])) continue; // must have field 1 (Name)
 			$this->data['kitchen'][] = array(
 				'organisation_id' => $row[0],
@@ -48,7 +49,8 @@ class TFCParser {
 	private function parseServiceUser(){
 		$this->data['service_user'] = array();
 		$this->data['service_user_meal'] = array();
-		foreach($this->csv['service_user'] as $rowIndex => $row){
+		$rows = $this->csv['service_user'];
+		foreach($rows as $rowIndex => $row){
 			if($rowIndex == 0 || empty($row[5])) continue; // must have field 5 (Booking ID)
 			if(empty($row[11])) $row[11] = ''; // kitchen comments are often empty
 			if(!empty($row[0])){
@@ -57,11 +59,11 @@ class TFCParser {
 					'status' => $this->statusCodeFromText($row[1]),
 					'postcode' => $row[2],
 					'booking_id' => $row[5],
-					'birthdate' => $row[9]
+					'birthdate' => date('Y-m-d', strtotime($row[9]))
 				);
 			}
 			$this->data['service_user_meal'][] = array(
-				'service_user' => count($this->data['service_user']) - 1,
+				'service_user' => count($this->data['service_user']),
 				'meal_type' => $row[4],
 				'comments' => $row[6],
 				'kitchen_comments' => $row[11]
@@ -70,18 +72,20 @@ class TFCParser {
 	}
 	private function parseVolunteer(){
 		$this->data['volunteer'] = array();
-		$this->data['role'] = array();
-		foreach($this->csv['volunteer'] as $rowIndex => $row){
+		$rows = $this->csv['volunteer'];
+		foreach($rows as $rowIndex => $row){
 			if($rowIndex == 0 || empty($row[0])) continue; // must have field 0 (Name)
-			$this->data['volunteer'][] = array(
+			$newVolunteer = array(
 				'name' => $row[0],
 				'kitchen' => $row[1],
-				'mobile_phone' => $row[2],
-				'role' => $row[3]
+				'mobile_phone' => $row[2]
 			);
-			$this->data['role'][$row[3]] = array(
-				'name' => $row[3]
-			);
+			for($i = 3; $i <= 5; $i++){
+				if($row[$i] == '1'){
+					$newVolunteer['role'] = $rows[0][$i];
+				}
+			}
+			$this->data['volunteer'][] = $newVolunteer;
 		}
 	}
 }
