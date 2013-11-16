@@ -9,12 +9,12 @@ $app = new \Slim\Slim();
 
 $app->get('/', function(){
 	?>
-	Available API calls:
-	/kitchen
-	/volunteer
-	/service_user
-	/service_user_meal
-	/service_user_meal/:service_user
+	<strong>Available API calls:</strong><br>
+	/kitchen<br>
+	/volunteer<br>
+	/service_user<br>
+	/service_user_meal<br>
+	/service_user_meal/:service_user<br>
 	<?php
 });
 
