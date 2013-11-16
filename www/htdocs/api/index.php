@@ -1,6 +1,6 @@
 <?php
 
-require_once('../../helpers/database.php');
+require_once('../../includes/database.php');
 $db = getPDOHandle();
 
 require 'Slim/Slim.php';
@@ -13,6 +13,7 @@ $app->get('/', function(){
 	/kitchen<br>
 	/volunteer<br>
 	/service_user<br>
+	/service_user/:id<br>
 	/service_user_meal<br>
 	/service_user_meal/:service_user<br>
 	<?php
@@ -49,6 +50,18 @@ $app->get('/service_user', function(){
 	$query = 'SELECT id, name, status, postcode, booking_id, birthdate FROM service_user';
 	$st = $db->query($query);
 	$st->execute();
+	$ret['service_users'] = $st->fetchAll(PDO::FETCH_ASSOC);
+
+	echo json_encode($ret);
+});
+
+$app->get('/service_user/:id', function($id){
+	global $db;
+	$ret = array('status' => 0);
+
+	$query = 'SELECT id, name, status, postcode, booking_id, birthdate FROM service_user WHERE id = ?';
+	$st = $db->prepare($query);
+	$st->execute(array($id));
 	$ret['service_users'] = $st->fetchAll(PDO::FETCH_ASSOC);
 
 	echo json_encode($ret);

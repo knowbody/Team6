@@ -2,7 +2,7 @@
 
 require_once('classes/TFCParser.php');
 require_once('classes/TFCDBPopulator.php');
-require_once('helpers/database.php');
+require_once('includes/database.php');
 
 $sampleDataPath = 'data/sampledata/';
 $fileKitchen = file_get_contents($sampleDataPath . 'kitchen.csv');

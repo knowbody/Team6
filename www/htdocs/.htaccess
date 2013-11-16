@@ -1,0 +1,31 @@
+Options +FollowSymlinks
+Options -Indexes
+Options -MultiViews
+
+ServerSignature Off
+
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .css .js .xml .json .rss
+
+RewriteEngine on
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^([a-zA-Z0-9_-]+)((&.+\=.+)*)$ index.php?page=$1$2 [QSA]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)((&.+\=.+)*)$ index.php?page=$1&subpage=$2$3 [QSA]
+
+<FilesMatch "home\.js$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
+<FilesMatch "SlotMachine\.js$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
