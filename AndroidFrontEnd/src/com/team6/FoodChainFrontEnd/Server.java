@@ -1,12 +1,9 @@
 package com.team6.FoodChainFrontEnd;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Server {
-    public static Collection<DestinationInfo> getRoutesFromServer(String aDriverID) {
+    public static List<DestinationInfo> getRoutesFromServer(String aDriverID) {
 //        try {
 //            Thread.sleep(2000);
 //        } catch (InterruptedException e) {

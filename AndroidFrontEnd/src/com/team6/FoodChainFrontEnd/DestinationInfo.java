@@ -2,15 +2,16 @@ package com.team6.FoodChainFrontEnd;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.List;
 
 public class DestinationInfo {
     private final String theAddress;
     private final String thePostCode;
     private final String theExtraComments;
     private final String thePhoneNumber;
-    private final Collection<MealInfo> theMealInfos;
+    private final List<MealInfo> theMealInfos;
 
-    public DestinationInfo(String aAddress, String thePostCode, String theExtraComments, String thePhoneNumber, Collection<MealInfo> theMealInfos) {
+    public DestinationInfo(String aAddress, String thePostCode, String theExtraComments, String thePhoneNumber, List<MealInfo> theMealInfos) {
         theAddress = aAddress;
         this.thePostCode = thePostCode;
         this.theExtraComments = theExtraComments;
@@ -34,7 +35,7 @@ public class DestinationInfo {
         return thePhoneNumber;
     }
 
-    public Collection<MealInfo> getTheMealInfos() {
+    public List<MealInfo> getTheMealInfos() {
         return theMealInfos;
     }
 }
