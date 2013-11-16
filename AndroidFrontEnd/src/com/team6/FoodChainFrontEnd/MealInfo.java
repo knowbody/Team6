@@ -1,0 +1,5 @@
+package com.team6.FoodChainFrontEnd;
+
+public enum MealInfo {
+    REGULAR, VEGETARIAN,AFRICAN, DIABETIC, SOFT_FOOD, GLUTEN_FREE, TRADITIONAL_BRITISH, HALAL;
+}
