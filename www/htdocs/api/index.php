@@ -7,6 +7,17 @@ require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 $app = new \Slim\Slim();
 
+$app->get('/', function(){
+	?>
+	Available API calls:
+	/kitchen
+	/volunteer
+	/service_user
+	/service_user_meal
+	/service_user_meal/:service_user
+	<?php
+});
+
 $app->get('/kitchen', function(){
 	global $db;
 	$ret = array('status' => 0);
