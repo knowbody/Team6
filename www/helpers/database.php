@@ -4,7 +4,11 @@ define("DB_HOSTNAME", '127.0.0.1');
 define("DB_DATABASE", 'thefoodchain');
 define("DB_USERNAME", 'root');
 define("DB_PASSWORD", 'dshr3VCRWDR3j5@gbr@');	
-define("DB_PORT", '33306');
+if(gethostname() == "beachhouse" || gethostname() == "beachhouse.local"){
+	define("DB_PORT", '33306');
+}else{
+	define("DB_PORT", '3306');
+}
 
 function getPDOHandle() {
 	$dsn = 'mysql:dbname='.DB_DATABASE.';host='.DB_HOSTNAME
