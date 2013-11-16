@@ -15,10 +15,6 @@ public class MyActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EditText myEditText = (EditText) findViewById(R.id.edit_login);
-        boolean aBoolean = DataStore.dataExists(this);
-        if(aBoolean)
-            myEditText.setText("Found");
         setContentView(R.layout.main);
     }
     public void login(View aView) {

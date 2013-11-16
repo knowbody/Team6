@@ -9,7 +9,9 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 
 public class LoginActivity extends Activity {
@@ -19,7 +21,18 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.loginactivity);
         Intent myIntent = getIntent();
         String myDriverID = myIntent.getStringExtra(MyActivity.THEDRIVERID);
-        Collection<DestinationInfo> myRoutesFromServer = Server.getRoutesFromServer(myDriverID);
+        List<DestinationInfo> myRoutesFromServer = null;
+        if(DataStore.dataExists(this)) {
+            myRoutesFromServer = Server.getRoutesFromServer(myDriverID);
+            myRoutesFromServer = DataStore.load(this);
+//            ArrayList<MealInfo> myMealInfos = new ArrayList<MealInfo>();
+//            myMealInfos.add(MealInfo.AFRICAN);
+//            myRoutesFromServer.add(new DestinationInfo("address", "postcode2", "extra comments", "phone number", myMealInfos))  ;
+        }
+        else {
+            myRoutesFromServer = Server.getRoutesFromServer(myDriverID);
+
+        }
         DataStore.store(myRoutesFromServer, this);
         LinearLayout myScrollView = (LinearLayout) findViewById(R.id.scroll_layout);
         for(DestinationInfo destinationInfo : myRoutesFromServer) {
