@@ -1,5 +1,6 @@
 package com.team6.FoodChainFrontEnd;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 public class DestinationInfo {
