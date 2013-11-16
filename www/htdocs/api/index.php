@@ -16,6 +16,7 @@ $app->get('/', function(){
 	/service_user/:id<br>
 	/service_user_meal<br>
 	/service_user_meal/:service_user<br>
+	/route<br>
 	<?php
 });
 
@@ -39,6 +40,18 @@ $app->get('/volunteer', function(){
 	$st = $db->query($query);
 	$st->execute();
 	$ret['volunteers'] = $st->fetchAll(PDO::FETCH_ASSOC);
+
+	echo json_encode($ret);
+});
+
+$app->get('/route', function(){
+	global $db;
+	$ret = array('status' => 0);
+
+	$query = 'SELECT id, waypoints, driver FROM route';
+	$st = $db->query($query);
+	$st->execute();
+	$ret['route'] = $st->fetchAll(PDO::FETCH_ASSOC);
 
 	echo json_encode($ret);
 });
