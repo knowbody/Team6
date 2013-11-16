@@ -1,6 +1,7 @@
 package com.team6.FoodChainFrontEnd;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,34 +22,26 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.loginactivity);
         Intent myIntent = getIntent();
         String myDriverID = myIntent.getStringExtra(MyActivity.THEDRIVERID);
-        List<DestinationInfo> myRoutesFromServer = null;
-        if(DataStore.dataExists(this)) {
-            myRoutesFromServer = Server.getRoutesFromServer(myDriverID);
-            myRoutesFromServer = DataStore.load(this);
-//            ArrayList<MealInfo> myMealInfos = new ArrayList<MealInfo>();
-//            myMealInfos.add(MealInfo.AFRICAN);
-//            myRoutesFromServer.add(new DestinationInfo("address", "postcode2", "extra comments", "phone number", myMealInfos))  ;
-        }
-        else {
-            myRoutesFromServer = Server.getRoutesFromServer(myDriverID);
-
-        }
-        DataStore.store(myRoutesFromServer, this);
+        List<DestinationInfo> myRoutesFromServer = Server.getRoutesFromServer(myDriverID);
+        PersistentStore.myDestinationInfos = myRoutesFromServer;
         LinearLayout myScrollView = (LinearLayout) findViewById(R.id.scroll_layout);
+        final Context thisContext = this;
+        int i = 0;
         for(DestinationInfo destinationInfo : myRoutesFromServer) {
             TextView myTextView = new TextView(this);
             myTextView.setTextSize(40);
             myTextView.setText(destinationInfo.getThePostCode());
+            final int index = i;
             myTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    Intent myIntent = new Intent(this, LocationDetailsActivity.class);
-//                    myIntent.putExtra()
-//                    startActivity(myIntent);
+                    Intent myIntent = new Intent(thisContext, LocationDetailsActivity.class);
+                    PersistentStore.index = index;
+                    startActivity(myIntent);
                 }
             });
             myScrollView.addView(myTextView);
-
+            i++;
         }
     }
 }
