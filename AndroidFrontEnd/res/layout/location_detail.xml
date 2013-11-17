@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
@@ -16,7 +15,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/sysGreen"
-            android:text="Please Enter your Driver ID."
+            android:text=""
             android:id="@+id/text_view1"
             />
     <View
@@ -29,7 +28,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/sysGreen"
-            android:text="Please Enter your Driver ID."
+            android:text=""
             android:id="@+id/text_view2"
             /><View
         android:layout_width="fill_parent"
@@ -41,36 +40,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/sysGreen"
-            android:text="Please Enter your Driver ID."
+            android:text=""
             android:id="@+id/text_view3"/><View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"
         android:visibility="visible"
         android:id="@+id/divider"/>
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/sysGreen"
-            android:text="Please Enter your Driver ID."
-            android:id="@+id/text_view4"
-            /><View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:visibility="visible"
-        android:id="@+id/divider"/>
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/sysGreen"
-            android:text="Please Enter your Driver ID."
-            android:id="@+id/text_view5"/>
-    <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"
-            android:visibility="visible"
-            android:id="@+id/divider"/>
-
+    
 </LinearLayout>

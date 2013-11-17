@@ -22,15 +22,15 @@ public class LocationDetailsActivity extends Activity {
 
         myMealTypeString = (myMealTypeString.subSequence(0,myMealTypeString.length()-2)).toString();
 
-        TextView myExtraCommentsTextView = (TextView) findViewById(R.id.text_view2);
+        TextView myExtraCommentsTextView = (TextView) findViewById(R.id.text_view1);
         myExtraCommentsTextView.setText(myExtraComments);
         myExtraCommentsTextView.setTextSize(40);
 
-        TextView myPostCodeTextView = (TextView) findViewById(R.id.text_view3);
+        TextView myPostCodeTextView = (TextView) findViewById(R.id.text_view2);
         myPostCodeTextView.setText(myPostCode);
         myPostCodeTextView.setTextSize(40);
 
-        TextView myMealTypeStringTextView = (TextView) findViewById(R.id.text_view5);
+        TextView myMealTypeStringTextView = (TextView) findViewById(R.id.text_view3);
         myMealTypeStringTextView.setText(myMealTypeString);
         myMealTypeStringTextView.setTextSize(40);
 
