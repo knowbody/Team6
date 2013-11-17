@@ -17,7 +17,6 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        Server.getRoutesFromServer2("BEEF");
     }
     public void login(View aView) {
         Intent myIntent = new Intent(this, LoginActivity.class);

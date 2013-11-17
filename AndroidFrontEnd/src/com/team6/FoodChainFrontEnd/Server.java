@@ -11,54 +11,40 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Server {
-    public class MyThread extends Thread {
-        private Handler theHandler;
-        private String theDriverID;
-        public MyThread(String aDriverID) {
-            theDriverID = aDriverID;
-        }
-        @Override
-        public void run() {
-            theHandler = new Handler() {
-                public void handleMessage(Message aMsg) {
-                }
-            };
-//            ArrayList<DestinationInfo> foundDestinationInfos = getJson(theDriverID);
-            Bundle myBundle = new Bundle();
-            myBundle.putParcelableArrayList("data",new ArrayList<DestinationInfo>());
-            Message myMessage = new Message();
-            myMessage.setData(myBundle);
-            theHandler.sendMessage(myMessage);
-        }
-    }
 //    public static List<DestinationInfo> getRoutesFromServer(String aDriverID) {
 //        return myDestinationInfos;
 //    }
     private static String server = "http://ec2-54-216-92-247.eu-west-1.compute.amazonaws.com/api/";
     public static List<DestinationInfo> getRoutesFromServer2(final String aDriverID)
     {
-        Message msg = new Message();
-        Bundle data = msg.getData();
-        return data.getParcelableArrayList("data");
-//    	new Thread(new Runnable() {
-//    	    //Thread to stop network calls on the UI thread
-//            mHandler = ne
-//    	    public void run() {
-//    	    	List<DestinationInfo> foundDestinationInfos = getJson(aDriverID);
-//                Message msg = Message.obtain();
-//                msg.obj = foundDestinationInfos;
-//                mHandler.sendMessage(msg);
-//    	    }
-//    	}).start();
+    	new Thread(new Runnable() {
+    	    public void run() {
+    	    	PersistentStore.myDestinationInfos2 = getJson(aDriverID);
+    	    }
+    	}).start();
+    	
+    	
+    	while(true) {
+    		try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    		
+    		if(PersistentStore.myDestinationInfos2 != null)
+    			return PersistentStore.myDestinationInfos2;
+    	}
     }
     
-    private static ArrayList<DestinationInfo> getJson(String aDriverID)
+    public static ArrayList<DestinationInfo> getJson(String aDriverID)
     {
+    	ArrayList<DestinationInfo> myDestinationInfos = new ArrayList<DestinationInfo>();
 		try {
     	JSONParser json = new JSONParser();
     	JSONObject obj = json.getJSONFromUrl(server + "route");
     	
-    	JSONArray routes = (JSONArray) obj.get("route");
+    	JSONArray routes = (JSONArray) obj.get("routes");
     	String id = "";
         String name = "";
         String status = "";
@@ -96,17 +82,19 @@ public class Server {
         	obj = json.getJSONFromUrl(server + "service_user");
         	
         	//String[] ids = new String[]
-        	ArrayList<DestinationInfo> myDestinationInfos = new ArrayList<DestinationInfo>();
         	JSONArray susers = (JSONArray) obj.get("service_users");
         	for (int i = 0; i < susers.length(); i++) {
       		  JSONObject user = susers.getJSONObject(i);
       		  id = (String) user.get("id");
-              name = (String) user.get("name");
-              postcode = (String) user.get("postcode");
-              myDestinationInfos.add(new DestinationInfo(postcode,id,null, null ));
+      		  if(Contains(waypointIndexes, Integer.parseInt(id)))
+      		  {
+	              name = (String) user.get("name");
+	              postcode = (String) user.get("postcode");
+	              myDestinationInfos.add(new DestinationInfo(postcode,id,null, null ));
+      		  }
         	}
             for(DestinationInfo destinationInfo : myDestinationInfos) {
-                JSONObject mealJSON = json.getJSONFromUrl(server+"service_user/"+destinationInfo.getTheID());
+                JSONObject mealJSON = json.getJSONFromUrl(server+"service_user_meal/"+destinationInfo.getTheID());
                 JSONArray mealJSONArray = (JSONArray) mealJSON.get("service_user_meals");
                 ArrayList<String> mealTypes = new ArrayList<String>();
                 for(int i = 0; i < mealJSONArray.length(); ++i) {
@@ -116,14 +104,22 @@ public class Server {
                 }
                 destinationInfo.setTheMealInfos(mealTypes);
             }
-            return myDestinationInfos;
     	}
     		
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        return null;
+        return myDestinationInfos;
+    }
+    
+    public static boolean Contains(int[] a, int x) {
+    	for(int i : a) 
+    	{
+    		if(i == x)
+    			return true;
+    	}
+    	return false;
     }
 }
 
