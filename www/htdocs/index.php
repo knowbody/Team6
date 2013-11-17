@@ -11,7 +11,6 @@ if(empty($subpage)) $subpage = 'main';
 if(empty($page)) {
 	$page = "home";
 }else if(!file_exists(path('views/main-'.$page.'.php'))) {
-	error_log(path('views/main-'.$page.'.php'));
 	$page = "not-found";
 }
 
