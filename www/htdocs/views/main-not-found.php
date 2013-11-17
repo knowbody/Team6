@@ -1,5 +1,7 @@
 <content>
 	<container>
-		<h1>Page not found — sorry!</h1>
+		<div class="inner">
+			<h1>Page not found — sorry!</h1>
+		</div>
 	</container>
 </content>

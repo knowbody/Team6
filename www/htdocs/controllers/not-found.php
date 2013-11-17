@@ -1,3 +1,3 @@
 <?php
 
-view('not-found');
+view('main-not-found');
