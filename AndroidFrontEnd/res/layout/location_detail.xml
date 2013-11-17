@@ -4,7 +4,8 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:id="@+id/detail_view">
+              android:id="@+id/detail_view"
+              android:background="@color/sysGray">
         <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
@@ -14,6 +15,7 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/sysGreen"
             android:text="Please Enter your Driver ID."
             android:id="@+id/text_view1"
             />
@@ -26,6 +28,7 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/sysGreen"
             android:text="Please Enter your Driver ID."
             android:id="@+id/text_view2"
             /><View
@@ -37,6 +40,7 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/sysGreen"
             android:text="Please Enter your Driver ID."
             android:id="@+id/text_view3"/><View
         android:layout_width="fill_parent"
@@ -47,6 +51,7 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/sysGreen"
             android:text="Please Enter your Driver ID."
             android:id="@+id/text_view4"
             /><View
@@ -58,6 +63,7 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/sysGreen"
             android:text="Please Enter your Driver ID."
             android:id="@+id/text_view5"/>
     <View
