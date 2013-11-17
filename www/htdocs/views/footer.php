@@ -3,22 +3,17 @@
 		<?php if($page == 'upload'){ ?>
 		<script src="<?php echo url('js/upload.js'); ?>"></script>
 		<?php } ?>
-		<?php if($page = 'view'){ ?>
+		<?php if($page = 'routes'){ ?>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvHJzUT6MfhjvUlyjo6bYhDV-EV8i-Dc0&sensor=false"></script>
 		<script type="text/javascript">
 			google.maps.event.addDomListener(window, 'load', initialize);
-			var postcodeStrings = [
-				"",
-				"Manchester,London",
-				"Oxford,London",
-				"LE126UW,NG104AH,B112RJ,London"
-			];
 			function initialize(){
 				makeMap(1);
 				makeMap(2);
 				makeMap(3);
 			}
 			function makeMap(mapNo) {
+				var mapElem = document.getElementById("map-canvas-" + mapNo);
 				var directionDisplay;
 				var directionsService = new google.maps.DirectionsService();
 				var map;
@@ -34,7 +29,7 @@
 				var waypoints = [];
 				var postcodes = [];
 
-				postcodes = postcodeStrings[mapNo].split(",");
+				postcodes = mapElem.getAttribute('postcodes').split(",");
 
 				var length = postcodes.length;
 				if (length > 2) {
@@ -50,14 +45,14 @@
 					origin: String(postcodes[0]),
 					destination: String(postcodes[length - 1]),
 					waypoints: waypoints,
-					optimizeWaypoints: false,//set this to true to get optimized path else it will plot as the given input.
-					travelMode: google.maps.DirectionsTravelMode.DRIVING//set your travel mode here (walking,driving..)
+					optimizeWaypoints: true,
+					travelMode: google.maps.DirectionsTravelMode.DRIVING
 				};
 
 
 				directionsService.route(request, function (response, status) {
 					if (status == google.maps.DirectionsStatus.OK) {
-						map = new google.maps.Map(document.getElementById("map-canvas-" + mapNo), myOptions);
+						map = new google.maps.Map(mapElem, myOptions);
 						directionsDisplay.setMap(map);
 						directionsDisplay.setDirections(response);
 						var route = response.routes[0];

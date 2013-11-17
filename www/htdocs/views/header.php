@@ -14,8 +14,8 @@
 					<div class="navitem<?php echo $page == 'upload' ? ' current' : ''; ?>">
 						<a href="upload">Upload database</a>
 					</div>
-					<div class="navitem<?php echo $page == 'view' ? ' current' : ''; ?>">
-						<a href="view">View database</a>
+					<div class="navitem<?php echo $page == 'routes' ? ' current' : ''; ?>">
+						<a href="routes">View routes</a>
 					</div>
 				</nav>
 			</container>

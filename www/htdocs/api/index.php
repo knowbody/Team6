@@ -6,12 +6,15 @@ require_once('../../models/ServiceUsers.php');
 $db = getPDOHandle();
 
 require 'Slim/Slim.php';
+use Slim\Slim;
 \Slim\Slim::registerAutoloader();
 $app = new \Slim\Slim();
 
 $app->get('/', function(){
 	?>
 	<strong>Available API calls:</strong><br>
+	<br>
+	<em>GET</em><br>
 	/kitchen<br>
 	/volunteer<br>
 	/service_user<br>
@@ -19,6 +22,9 @@ $app->get('/', function(){
 	/service_user_meal<br>
 	/service_user_meal/:service_user<br>
 	/route<br>
+	<br>
+	<em>POST</em><br>
+	/route -> waypoints, kitchen
 	<?php
 });
 
@@ -50,6 +56,20 @@ $app->get('/route', function(){
 	global $db;
 	$route = new Routes($db);
 	echo json_encode($route->getAll());
+});
+
+$app->post('/route', function(){
+	global $db;
+	$ret = array('status' => 0);
+	$request = Slim::getInstance()->request();
+	$waypoints = $request->params('waypoints');
+	$kitchen = $request->params('kitchen');
+
+	$query = "INSERT INTO route (waypoints, kitchen) VALUES (?, ?)";
+	$st = $db->prepare($query);
+	$st->execute(array($waypoints, $kitchen));
+
+	echo json_encode($ret);
 });
 
 $app->get('/service_user', function(){

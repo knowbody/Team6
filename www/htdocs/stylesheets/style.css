@@ -52,7 +52,7 @@ p {
 }
 
 body {
-
+	padding-bottom:20px;
 }
 
 container {
@@ -140,5 +140,4 @@ h1:first-child, h2:first-child {
 }
 
 .route {
-	margin-bottom:30px;
 }

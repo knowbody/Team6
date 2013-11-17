@@ -23,7 +23,7 @@ foreach($allRoutes as $indexRoute => $route){
 										$serviceUsersForRoutes);
 }
 
-view('main-view', array(
+view('main-routes', array(
 	'serviceUsersForRoutes' => $serviceUsersForRoutes,
 	'allRoutes' => $allRoutes,
 	'expandedRoutes' => $expandedRoutes
