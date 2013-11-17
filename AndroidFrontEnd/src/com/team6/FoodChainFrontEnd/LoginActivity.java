@@ -26,8 +26,12 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginactivity);
         Intent myIntent = getIntent();
+
         String myDriverID = myIntent.getStringExtra(MyActivity.THEDRIVERID);
+
+
         //TODO WHAT IS THIS?
+        PersistentStore.myDestinationInfos2 = null;
         List<DestinationInfo> myRoutesFromServer = Server.getRoutesFromServer2(myDriverID);
         PersistentStore.myDestinationInfos = myRoutesFromServer;
         //TODO WHAT IS THIS?

@@ -67,7 +67,7 @@ public class Server {
     	
     	if(found == false)
     		//TODO: Failure
-		    return null;
+		    return new ArrayList<DestinationInfo>();
     	else
     	{
     		String[] vals = waypoints.split(",");
