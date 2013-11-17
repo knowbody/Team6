@@ -16,6 +16,8 @@ $(document).ready( function() {
 	});
 });		
 $('#buttonUpload').click(function(){
+	$("#uploadFormContent").css('opacity','0.5');
+	$("#uploadFormLoading").show();
 	var formData = new FormData();
 	formData.append("volunteer", document.getElementById('fileInputVolunteer').files[0]);
 	formData.append("serviceUser", document.getElementById('fileInputServiceUser').files[0]);
@@ -24,16 +26,14 @@ $('#buttonUpload').click(function(){
 		type: 'post',
 		url: 'ajax/importData.php',
 		data: formData,
-		success: function(resp){
-			console.log('ok');
-		},
-		xhrFields: {
-			onprogress: function(progress){
-				var percentage = Math.floor((progress.total / progress.totalSize) * 100);
-				console.log('progress', percentage);
-				if (percentage === 100) {
-					console.log('DONE!');
-				}
+		dataType: 'json',
+		success: function(data){
+			if(data.status == 0){
+				$("#uploadFormLoading .status").hide();
+				$("#uploadFormStatusOK").show();
+			}else{
+				$("#uploadFormLoading .status").hide();
+				$("#uploadFormStatusError").show();
 			}
 		},
 		processData: false,

@@ -47,7 +47,6 @@ p {
 	text-align: right;
 	filter: alpha(opacity=0);
 	opacity: 0;
-	background: red;
 	cursor: inherit;
 	display: block;
 }
@@ -110,4 +109,32 @@ content > container > .inner {
 
 h1:first-child {
 	margin-top:0;
+}
+
+#uploadForm {
+	position:relative;
+}
+
+#uploadFormLoading {
+	display:none;
+	text-align:center;
+	position:absolute;
+	top:50px; left:0; right:0; bottom:0;
+	z-index:10000;
+}
+#uploadFormLoading .inner {
+	background:white;
+	height:150px;
+	width:200px;
+	margin:0 auto;
+	padding:40px;
+}
+#uploadFormLoading .inner p {
+	margin:15px 0;
+}
+#uploadFormLoading .status {
+	display:none;
+}
+#uploadFormLoading #uploadFormStatusLoading {
+	display:inline;
 }
