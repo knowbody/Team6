@@ -8,9 +8,10 @@
 		<script type="text/javascript">
 			google.maps.event.addDomListener(window, 'load', initialize);
 			function initialize(){
-				makeMap(1);
-				makeMap(2);
-				makeMap(3);
+				$('.route').each(function(){
+					var id = $(this).attr('routeid');
+					makeMap(id);
+				});
 			}
 			function makeMap(mapNo) {
 				var mapElem = document.getElementById("map-canvas-" + mapNo);
