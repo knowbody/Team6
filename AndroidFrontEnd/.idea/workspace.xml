@@ -29,21 +29,21 @@
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384620250562" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/team6/FoodChainFrontEnd/Manifest.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384623659066" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/team6/FoodChainFrontEnd/R.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384638952495" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/team6/FoodChainFrontEnd/BuildConfig.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384638990684" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/team6/FoodChainFrontEnd/R.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384657230197" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/team6/FoodChainFrontEnd/BuildConfig.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384657296014" ignored="false" />
     <file path="/main.xml" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384624936770" ignored="false" />
     <file path="/strings.xml" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384624659702" ignored="false" />
     <file path="/MyActivity.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384638939364" ignored="false" />
-    <file path="/LoginActivity.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384640744354" ignored="false" />
-    <file path="/Server.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384645460373" ignored="false" />
+    <file path="/LoginActivity.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384663218249" ignored="false" />
+    <file path="/Server.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384663973010" ignored="false" />
     <file path="/fragment.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384625303229" ignored="false" />
-    <file path="/DestinationInfo.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384637820095" ignored="false" />
+    <file path="/DestinationInfo.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384662662623" ignored="false" />
     <file path="/MealInfo.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384642479825" ignored="false" />
     <file path="/Dummy.txt" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384639167387" ignored="false" />
     <file path="/loginactivity.xml" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384633641306" ignored="false" />
     <file path="/DBAdapter.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384634299994" ignored="false" />
     <file path="/DataStore.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384637783100" ignored="false" />
-    <file path="/LocationDetailsActivity.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384645543259" ignored="false" />
+    <file path="/LocationDetailsActivity.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384659780548" ignored="false" />
     <file path="/PersistentStore.java" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384639794798" ignored="false" />
     <file path="/location_detail.xml" changelist="ab6e902c-603d-4c87-81cc-fde393465604" time="1384645092503" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,26 +106,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MyActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="72" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="12" selection-start="1178" selection-end="1205" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1347#1669#0" expanded="true" />
-                <element signature="e#1654#1655#0" expanded="true" />
-              </folding>
+            <state line="29" column="78" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,9 +119,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/PersistentStore.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="32" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,18 +127,7 @@
       <file leaf-file-name="LocationDetailsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/LocationDetailsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="66" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.8">
+            <state line="13" column="39" selection-start="397" selection-end="412" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,40 +136,59 @@
       <file leaf-file-name="location_detail.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/location_detail.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="39" selection-start="2764" selection-end="2764" vertical-scroll-proportion="-5.52">
+            <state line="67" column="39" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginactivity.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/loginactivity.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="25" selection-start="611" selection-end="611" vertical-scroll-proportion="-4.32">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MealInfo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MealInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Server.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="0.52478135">
+            <state line="95" column="24" selection-start="3069" selection-end="3069" vertical-scroll-proportion="0.042016808">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3228#3245#0" expanded="true" />
+                <element signature="e#3991#3999#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JSONParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/JSONParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MealInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MealInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="22" selection-start="0" selection-end="697" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/DatabaseParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SerializeObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/SerializeObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="13" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -206,7 +197,7 @@
       <file leaf-file-name="DestinationInfo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/DestinationInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+            <state line="60" column="0" selection-start="1633" selection-end="1633" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -229,15 +220,15 @@
         <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/DBAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/DataStore.java" />
-        <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/DestinationInfo.java" />
         <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/LocationDetailsActicity.java" />
         <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/PersistentStore.java" />
-        <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MealInfo.java" />
         <option value="$PROJECT_DIR$/res/layout/location_detail.xml" />
-        <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/Server.java" />
+        <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MealInfo.java" />
         <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/LocationDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/DestinationInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/Server.java" />
       </list>
     </option>
   </component>
@@ -276,12 +267,22 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Team6App" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Android 4.1.2 Google APIs &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -364,23 +365,26 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="project.propVCSSupport.ChangelistConflict" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -420,6 +424,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -445,19 +462,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -537,6 +541,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ab6e902c-603d-4c87-81cc-fde393465604" name="Default" comment="" />
@@ -546,14 +567,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="25" width="1372" height="745" extended-state="6" />
+    <frame x="-3" y="25" width="1372" height="745" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.67278796" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.67278796" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.67001677" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39899832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -566,9 +584,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961948" sideWeight="0.67001677" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.67001677" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.67278796" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.327212" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.67445743" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32554257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.67278796" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.67278796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.67001677" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -640,54 +661,56 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/DB/NotesDbAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="58" selection-start="7182" selection-end="7182" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/DB/ShowActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="127" selection-start="4361" selection-end="4361" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="139" column="127" selection-start="4361" selection-end="4361" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/DB/NotesDbAdapter_HOTEL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="32" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MealInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="39" column="32" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.8">
+        <state line="3" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="353" selection-end="529" vertical-scroll-proportion="-3.32">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="72" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/loginactivity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/location_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="39" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -695,82 +718,67 @@
     <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/PersistentStore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="32" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/DestinationInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/JSONParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="353" selection-end="529" vertical-scroll-proportion="-3.32">
+        <state line="19" column="13" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MyActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/SerializeObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="72" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/loginactivity.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="611" selection-end="611" vertical-scroll-proportion="-4.32">
+        <state line="25" column="13" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/location_detail.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/MealInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="39" selection-start="2764" selection-end="2764" vertical-scroll-proportion="-5.52">
+        <state line="15" column="22" selection-start="0" selection-end="697" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="12" selection-start="1178" selection-end="1205" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1347#1669#0" expanded="true" />
-            <element signature="e#1654#1655#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/LocationDetailsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="66" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="13" column="39" selection-start="397" selection-end="412" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/DestinationInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="1633" selection-end="1633" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/DatabaseParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="78" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/team6/FoodChainFrontEnd/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="0.52478135">
-          <folding />
+        <state line="95" column="24" selection-start="3069" selection-end="3069" vertical-scroll-proportion="0.042016808">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3228#3245#0" expanded="true" />
+            <element signature="e#3991#3999#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
