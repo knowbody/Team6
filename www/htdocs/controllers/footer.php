@@ -1,3 +1,6 @@
 <?php
 
-view('footer');
+view('footer', array(
+	'page' => $page,
+	'subpage' => $subpage
+));

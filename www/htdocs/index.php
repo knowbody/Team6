@@ -1,6 +1,7 @@
 <?php
 
 require_once('base.php');
+require_once(PATH.'/../includes/database.php');
 
 // pages
 $page = empty($_GET['page']) ? '' :
@@ -14,13 +15,20 @@ if(empty($page)) {
 	$page = "not-found";
 }
 
+if(file_exists(path('controllers/'.$page.'.php'))){
+	$mainController = $page;
+}else{
+	$mainController = 'main';
+}
+
 controller('header', array(
 	'page' => $page,
 	'subpage' => $subpage
 ));
-controller('main', array(
+controller($mainController, array(
 	'page' => $page,
-	'subpage' => $subpage
+	'subpage' => $subpage,
+	'db' => getPDOHandle()
 ));
 controller('footer', array(
 	'page' => $page,

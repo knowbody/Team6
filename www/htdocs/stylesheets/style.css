@@ -107,7 +107,7 @@ content > container > .inner {
 	background:#fafafa;
 }
 
-h1:first-child {
+h1:first-child, h2:first-child {
 	margin-top:0;
 }
 
@@ -137,4 +137,8 @@ h1:first-child {
 }
 #uploadFormLoading #uploadFormStatusLoading {
 	display:inline;
+}
+
+.route {
+	margin-bottom:30px;
 }

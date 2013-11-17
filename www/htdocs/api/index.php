@@ -1,6 +1,8 @@
 <?php
 
 require_once('../../includes/database.php');
+require_once('../../models/Routes.php');
+require_once('../../models/ServiceUsers.php');
 $db = getPDOHandle();
 
 require 'Slim/Slim.php';
@@ -46,38 +48,20 @@ $app->get('/volunteer', function(){
 
 $app->get('/route', function(){
 	global $db;
-	$ret = array('status' => 0);
-
-	$query = 'SELECT id, waypoints, driver FROM route';
-	$st = $db->query($query);
-	$st->execute();
-	$ret['route'] = $st->fetchAll(PDO::FETCH_ASSOC);
-
-	echo json_encode($ret);
+	$route = new Routes($db);
+	echo json_encode($route->getAll());
 });
 
 $app->get('/service_user', function(){
 	global $db;
-	$ret = array('status' => 0);
-
-	$query = 'SELECT id, name, status, postcode, booking_id, birthdate FROM service_user';
-	$st = $db->query($query);
-	$st->execute();
-	$ret['service_users'] = $st->fetchAll(PDO::FETCH_ASSOC);
-
-	echo json_encode($ret);
+	$serviceUsers = new ServiceUsers($db);
+	echo json_encode($serviceUsers->getAll());
 });
 
 $app->get('/service_user/:id', function($id){
 	global $db;
-	$ret = array('status' => 0);
-
-	$query = 'SELECT id, name, status, postcode, booking_id, birthdate FROM service_user WHERE id = ?';
-	$st = $db->prepare($query);
-	$st->execute(array($id));
-	$ret['service_users'] = $st->fetchAll(PDO::FETCH_ASSOC);
-
-	echo json_encode($ret);
+	$serviceUsers = new ServiceUsers($db);
+	echo json_encode($serviceUsers->getUserById($id));
 });
 
 $app->get('/service_user_meal', function(){
