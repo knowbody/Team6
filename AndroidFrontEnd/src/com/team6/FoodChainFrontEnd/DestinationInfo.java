@@ -1,27 +1,25 @@
 package com.team6.FoodChainFrontEnd;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
 
-public class DestinationInfo {
-    private final String theAddress;
+public class DestinationInfo implements Parcelable {
     private final String thePostCode;
-    private final String theExtraComments;
-    private final String thePhoneNumber;
-    private final List<MealInfo> theMealInfos;
+    private final String theID;
+    private String theExtraComments;
+    private List<String> theMealInfos;
 
-    public DestinationInfo(String aAddress, String thePostCode, String theExtraComments, String thePhoneNumber, List<MealInfo> theMealInfos) {
-        theAddress = aAddress;
+    public DestinationInfo(String thePostCode, String theID, String theExtraComments, List<String> theMealInfos) {
         this.thePostCode = thePostCode;
+        this.theID = theID;
         this.theExtraComments = theExtraComments;
-        this.thePhoneNumber = thePhoneNumber;
         this.theMealInfos = theMealInfos;
     }
 
-    public String getTheAddress() {
-        return theAddress;
-    }
 
     public String getThePostCode() {
         return thePostCode;
@@ -31,11 +29,32 @@ public class DestinationInfo {
         return theExtraComments;
     }
 
-    public String getThePhoneNumber() {
-        return thePhoneNumber;
+    public List<String> getTheMealInfos() {
+        return theMealInfos;
     }
 
-    public List<MealInfo> getTheMealInfos() {
-        return theMealInfos;
+    public void setTheExtraComments(String theExtraComments) {
+        this.theExtraComments = theExtraComments;
+    }
+
+    public void setTheMealInfos(List<String> theMealInfos) {
+        this.theMealInfos = theMealInfos;
+    }
+
+    public String getTheID() {
+        return theID;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        //To change body of implemented methods use File | Settings | File Templates.
+        dest.writeString(this.theID);
+        dest.writeString(this.thePostCode);
+        dest.writeStringList(this.theMealInfos);
     }
 }

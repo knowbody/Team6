@@ -27,7 +27,7 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.loginactivity);
         Intent myIntent = getIntent();
         String myDriverID = myIntent.getStringExtra(MyActivity.THEDRIVERID);
-        List<DestinationInfo> myRoutesFromServer = Server.getRoutesFromServer(myDriverID);
+        List<DestinationInfo> myRoutesFromServer = Server.getRoutesFromServer2(myDriverID);
         PersistentStore.myDestinationInfos = myRoutesFromServer;
         LinearLayout myScrollView = (LinearLayout) findViewById(R.id.scroll_layout);
         final Context thisContext = this;
