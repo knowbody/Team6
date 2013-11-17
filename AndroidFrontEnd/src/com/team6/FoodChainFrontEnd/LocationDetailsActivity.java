@@ -22,6 +22,9 @@ public class LocationDetailsActivity extends Activity {
             myMealTypeString= myMealTypeString+ aMealInfo.toString()+", ";
         }
 
+        myMealTypeString = (myMealTypeString.subSequence(0,myMealTypeString.length()-2)).toString();
+
+
 
 
 
