@@ -85,13 +85,14 @@ public class Server {
     		json = new JSONParser();
         	obj = json.getJSONFromUrl(server + "service_user");
         	
-        	String[] ids = new String[]
+        	//String[] ids = new String[]
         	
         	JSONArray susers = (JSONArray) obj.get("service_users");
         	for (int i = 0; i < susers.length(); i++) {
       		  JSONObject user = susers.getJSONObject(i);
-      		  id = (String) route.get("id");
+      		  //id = (String) suers.get("id");
         	}
+        	
     	}
     	
     	
