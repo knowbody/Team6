@@ -64,10 +64,11 @@ $app->post('/route', function(){
 	$request = Slim::getInstance()->request();
 	$waypoints = $request->params('waypoints');
 	$kitchen = $request->params('kitchen');
+	$driver = substr(sha1(mt_rand()), 0, 6);
 
-	$query = "INSERT INTO route (waypoints, kitchen) VALUES (?, ?)";
+	$query = "INSERT INTO route (waypoints, kitchen, driver) VALUES (?, ?, ?)";
 	$st = $db->prepare($query);
-	$st->execute(array($waypoints, $kitchen));
+	$st->execute(array($waypoints, $kitchen, $driver));
 
 	echo json_encode($ret);
 });
