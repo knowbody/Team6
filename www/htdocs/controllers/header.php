@@ -1,3 +1,6 @@
 <?php
 
-view('header');
+view('header', array(
+	'page' => $page,
+	'subpage' => $subpage
+));

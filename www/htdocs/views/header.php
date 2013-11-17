@@ -11,10 +11,10 @@
 			<img src="img/logo.png">
 			<container>
 				<nav class="clearfix">
-					<div class="navitem current">
+					<div class="navitem<?php echo $page == 'upload' ? ' current' : ''; ?>">
 						<a href="upload">Upload database</a>
 					</div>
-					<div class="navitem">
+					<div class="navitem<?php echo $page == 'view' ? ' current' : ''; ?>">
 						<a href="view">View database</a>
 					</div>
 				</nav>
