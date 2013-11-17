@@ -15,6 +15,8 @@ if(empty($page)) {
 	$page = "not-found";
 }
 
+if($page == 'home') $page = 'upload';
+
 if(file_exists(path('controllers/'.$page.'.php'))){
 	$mainController = $page;
 }else{
