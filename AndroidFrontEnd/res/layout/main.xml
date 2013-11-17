@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:gravity="center"
-              android:background="@color/sysGray"
+              android:background="@drawable/bg"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:paddingBottom="50dp"
         >
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:textColor="@color/sysGreen"
+            android:textColor="@android:color/darker_gray"
             android:text="Please Enter your Driver ID."
             />
     <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text=""
             android:textSize="25dp"
             android:hint="Driver ID"
-            android:textColorHint="@color/sysPaleGreen"
+            android:background="@color/sysDkGray"
+            android:textColorHint="@color/sysTransparent"
             android:maxLines="1"
             android:singleLine="true"
             android:maxLength="10"
             android:id="@+id/edit_login" android:layout_gravity="center_horizontal|center_vertical"
-            />
+            android:autoText="true"/>
     <Button
             android:layout_width="158dp"
             android:layout_height="wrap_content"

@@ -4,11 +4,11 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:id="@+id/detail_view"
-              android:background="@color/sysGray">
+              android:background="@drawable/bg">
         <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
-                android:background="@android:color/darker_gray"
+                android:background="@android:color/white"
                 android:visibility="visible"
                 android:id="@+id/divider"/>
     <TextView
@@ -21,7 +21,7 @@
     <View
             android:layout_width="fill_parent"
             android:layout_height="1dp"
-            android:background="@android:color/darker_gray"
+            android:background="@android:color/white"
             android:visibility="visible"
             android:id="@+id/divider"/>
     <TextView
@@ -33,7 +33,7 @@
             /><View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
+        android:background="@android:color/white"
         android:visibility="visible"
         android:id="@+id/divider"/>
     <TextView
@@ -44,7 +44,7 @@
             android:id="@+id/text_view3"/><View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
+        android:background="@android:color/white"
         android:visibility="visible"
         android:id="@+id/divider"/>
     

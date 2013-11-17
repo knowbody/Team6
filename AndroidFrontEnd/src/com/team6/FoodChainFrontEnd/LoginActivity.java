@@ -49,7 +49,7 @@ public class LoginActivity extends Activity {
 //            android:visibility="visible"
             TextView myTextView = new TextView(this);
             myTextView.setTextSize(40);
-            myTextView.setTextColor(Color.parseColor(getString(R.color.sysGreen)));
+            myTextView.setTextColor(Color.parseColor(getString(R.color.sysWhite)));
             myTextView.setText(destinationInfo.getThePostCode());
             final int index = i;
             myTextView.setOnClickListener(new View.OnClickListener() {

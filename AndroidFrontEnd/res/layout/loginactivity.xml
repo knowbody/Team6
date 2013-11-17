@@ -6,7 +6,7 @@
               android:layout_height="match_parent">
 
     <ScrollView
-            android:background="@color/sysGray"
+            android:background="@drawable/bg"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/scrollView">
